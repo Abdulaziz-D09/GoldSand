@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold Sand and Gravy — Natural Resources. Stronger Tomorrow.</title>
+    <meta name="description" content="Gold Sand and Gravy is a quarry company based on the Sirdarya River, supplying high-quality sand, gravel, rocks, crushed stone and more across Uzbekistan.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ===================== PRELOADER ===================== -->
+    <div id="preloader">
+        <div class="loader-content">
+            <svg class="loader-logo" viewBox="0 0 80 60" fill="none">
+                <path d="M5 55 L40 5 L75 55 Z" stroke="#C8A35F" stroke-width="2" fill="none"/>
+                <path d="M20 55 L40 20 L60 55 Z" fill="#C8A35F" opacity="0.3"/>
+                <line x1="10" y1="45" x2="70" y2="45" stroke="#C8A35F" stroke-width="1.5"/>
+            </svg>
+            <div class="loader-bar"><div class="loader-progress"></div></div>
+        </div>
+    </div>
+
+    <!-- ===================== CURSOR FOLLOWER ===================== -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <svg viewBox="0 0 50 40" fill="none" class="logo-icon">
+                    <path d="M3 37 L25 3 L47 37 Z" stroke="#C8A35F" stroke-width="2" fill="none"/>
+                    <path d="M13 37 L25 14 L37 37 Z" fill="#C8A35F" opacity="0.4"/>
+                    <line x1="7" y1="30" x2="43" y2="30" stroke="#C8A35F" stroke-width="1.5"/>
+                </svg>
+                <div class="logo-text">
+                    <span class="logo-main">GOLD SAND</span>
+                    <span class="logo-sub">AND GRAVY</span>
+                </div>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" data-i18n="nav.home">Home</a></li>
+                <li><a href="#products" data-i18n="nav.products">Products</a></li>
+                <li><a href="#operations" data-i18n="nav.operations">Our Operations</a></li>
+                <li><a href="#delivery" data-i18n="nav.delivery">Delivery</a></li>
+                <li><a href="#calculator" data-i18n="nav.calculator">Calculator</a></li>
+                <li><a href="#about" data-i18n="nav.about">About</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <div class="lang-switcher" id="langSwitcher">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="ru">RU</button>
+                    <button class="lang-btn" data-lang="uz">UZ</button>
+                </div>
+                <a href="#contact" class="btn btn-primary btn-sm nav-cta" data-i18n="nav.quote">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===================== MOBILE MENU ===================== -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav-links">
+            <li><a href="#hero" data-i18n="nav.home">Home</a></li>
+            <li><a href="#products" data-i18n="nav.products">Products</a></li>
+            <li><a href="#operations" data-i18n="nav.operations">Our Operations</a></li>
+            <li><a href="#delivery" data-i18n="nav.delivery">Delivery</a></li>
+            <li><a href="#calculator" data-i18n="nav.calculator">Calculator</a></li>
+            <li><a href="#about" data-i18n="nav.about">About</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <div class="mobile-lang">
+            <button class="lang-btn active" data-lang="en">English</button>
+            <button class="lang-btn" data-lang="ru">Русский</button>
+            <button class="lang-btn" data-lang="uz">O'zbek</button>
+        </div>
+        <a href="tel:+998901234567" class="btn btn-primary mobile-cta"><i class="fas fa-phone"></i> +998 90 123 45 67</a>
+    </div>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-overlay"></div>
+            <div class="hero-particles" id="heroParticles"></div>
+        </div>
+        <div class="hero-content container">
+            <div class="hero-left">
+                <div class="hero-tags">
+                    <span>Sand</span> <span>/</span>
+                    <span>Gravel</span> <span>/</span>
+                    <span class="highlight">Stone</span> <span>/</span>
+                    <span>Crushed Stone</span>
+                </div>
+                <h1 class="hero-title">
+                    <span data-i18n="hero.title1">Natural Resources.</span><br>
+                    <span class="gold-text" data-i18n="hero.title2">Stronger Tomorrow.</span>
+                </h1>
+                <p class="hero-desc" data-i18n="hero.desc">Gold Sand and Gravy is a quarry company based on the Sirdarya River, supplying high-quality sand, gravel, rocks, crushed stone and more across Uzbekistan.</p>
+                <div class="hero-btns">
+                    <a href="#products" class="btn btn-primary" data-i18n="hero.explore">Explore Products <i class="fas fa-arrow-right"></i></a>
+                    <a href="#operations" class="btn btn-outline" data-i18n="hero.watch"><i class="fas fa-play-circle"></i> Watch Video</a>
+                </div>
+                <div class="hero-stats-row">
+                    <div class="hero-stat">
+                        <span class="stat-num" data-count="1000000">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label" data-i18n="hero.stat1">tons per year</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="stat-num" data-count="14">0</span>
+                        <span class="stat-label" data-i18n="hero.stat2">regions covered</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="stat-num" data-count="50">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label" data-i18n="hero.stat3">trucks in fleet</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <strong data-i18n="hero.quarry">Sirdarya River Quarry</strong>
+                        <span data-i18n="hero.ourloc">Our location</span>
+                    </div>
+                </div>
+                <a href="https://maps.app.goo.gl/iEEmPR3RcGJawMTAA" target="_blank" class="hero-map-link" data-i18n="hero.viewmap">View on map <i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span data-i18n="hero.scroll">Scroll</span>
+        </div>
+    </section>
+
+    <!-- ===================== MARQUEE ===================== -->
+    <div class="marquee-section">
+        <div class="marquee-track">
+            <div class="marquee-content">
+                <span>Sand</span><span class="dot">◆</span>
+                <span>Gravel</span><span class="dot">◆</span>
+                <span>Crushed Stone</span><span class="dot">◆</span>
+                <span>Rocks</span><span class="dot">◆</span>
+                <span>River Stone</span><span class="dot">◆</span>
+                <span>Construction Materials</span><span class="dot">◆</span>
+                <span>Delivery</span><span class="dot">◆</span>
+                <span>HOWO Trucks</span><span class="dot">◆</span>
+                <span>Sand</span><span class="dot">◆</span>
+                <span>Gravel</span><span class="dot">◆</span>
+                <span>Crushed Stone</span><span class="dot">◆</span>
+                <span>Rocks</span><span class="dot">◆</span>
+                <span>River Stone</span><span class="dot">◆</span>
+                <span>Construction Materials</span><span class="dot">◆</span>
+                <span>Delivery</span><span class="dot">◆</span>
+                <span>HOWO Trucks</span><span class="dot">◆</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================== PRODUCTS ===================== -->
+    <section class="section products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="products.tag">OUR PRODUCTS</span>
+                <h2 class="section-title" data-i18n="products.title">High-quality materials<br>for your projects</h2>
+                <p class="section-desc" data-i18n="products.desc">We supply a full range of construction materials from our quarry in the Sirdarya River. Reliable quality, consistent supply, and flexible delivery options.</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="product-img">
+                        <div class="product-img-placeholder">
+                            <i class="fas fa-mountain"></i>
+                        </div>
+                        <div class="product-overlay">
+                            <a href="#calculator" class="btn btn-sm btn-primary" data-i18n="products.calculate">Calculate Price</a>
+                        </div>
+                    </div>
+                    <h3 data-i18n="products.sand">Sand</h3>
+                    <p data-i18n="products.sand_desc">Clean, washed, construction grade sand for all building needs.</p>
+                    <div class="product-price">
+                        <span data-i18n="products.from">from</span> <strong>45,000 UZS</strong> <span data-i18n="products.per_ton">/ton</span>
+                    </div>
+                </div>
+                <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-img">
+                        <div class="product-img-placeholder">
+                            <i class="fas fa-cubes"></i>
+                        </div>
+                        <div class="product-overlay">
+                            <a href="#calculator" class="btn btn-sm btn-primary" data-i18n="products.calculate">Calculate Price</a>
+                        </div>
+                    </div>
+                    <h3 data-i18n="products.gravel">Gravel</h3>
+                    <p data-i18n="products.gravel_desc">Durable and high-quality gravel for all types of projects.</p>
+                    <div class="product-price">
+                        <span data-i18n="products.from">from</span> <strong>55,000 UZS</strong> <span data-i18n="products.per_ton">/ton</span>
+                    </div>
+                </div>
+                <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-img">
+                        <div class="product-img-placeholder">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <div class="product-overlay">
+                            <a href="#calculator" class="btn btn-sm btn-primary" data-i18n="products.calculate">Calculate Price</a>
+                        </div>
+                    </div>
+                    <h3 data-i18n="products.crushed">Crushed Stone</h3>
+                    <p data-i18n="products.crushed_desc">Perfect for concrete, roads and infrastructure projects.</p>
+                    <div class="product-price">
+                        <span data-i18n="products.from">from</span> <strong>65,000 UZS</strong> <span data-i18n="products.per_ton">/ton</span>
+                    </div>
+                </div>
+                <div class="product-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="product-img">
+                        <div class="product-img-placeholder">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <div class="product-overlay">
+                            <a href="#calculator" class="btn btn-sm btn-primary" data-i18n="products.calculate">Calculate Price</a>
+                        </div>
+                    </div>
+                    <h3 data-i18n="products.rocks">Rocks & Stones</h3>
+                    <p data-i18n="products.rocks_desc">Natural and solid rocks for heavy construction and landscaping.</p>
+                    <div class="product-price">
+                        <span data-i18n="products.from">from</span> <strong>40,000 UZS</strong> <span data-i18n="products.per_ton">/ton</span>
+                    </div>
+                </div>
+                <div class="product-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="product-img">
+                        <div class="product-img-placeholder">
+                            <i class="fas fa-circle"></i>
+                        </div>
+                        <div class="product-overlay">
+                            <a href="#calculator" class="btn btn-sm btn-primary" data-i18n="products.calculate">Calculate Price</a>
+                        </div>
+                    </div>
+                    <h3 data-i18n="products.river_stone">River Stone</h3>
+                    <p data-i18n="products.river_stone_desc">Smooth, naturally rounded stones from Sirdarya River bed.</p>
+                    <div class="product-price">
+                        <span data-i18n="products.from">from</span> <strong>50,000 UZS</strong> <span data-i18n="products.per_ton">/ton</span>
+                    </div>
+                </div>
+                <div class="product-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="product-img">
+                        <div class="product-img-placeholder">
+                            <i class="fas fa-boxes-stacked"></i>
+                        </div>
+                        <div class="product-overlay">
+                            <a href="#calculator" class="btn btn-sm btn-primary" data-i18n="products.calculate">Calculate Price</a>
+                        </div>
+                    </div>
+                    <h3 data-i18n="products.pgs">PGS (Sand-Gravel Mix)</h3>
+                    <p data-i18n="products.pgs_desc">Sand and gravel mixture ideal for road base and foundations.</p>
+                    <div class="product-price">
+                        <span data-i18n="products.from">from</span> <strong>48,000 UZS</strong> <span data-i18n="products.per_ton">/ton</span>
+                    </div>
+                </div>
+            </div>
+            <div class="products-footer">
+                <a href="#calculator" class="btn btn-outline" data-i18n="products.view_all">Calculate your order <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== OPERATIONS ===================== -->
+    <section class="section operations" id="operations">
+        <div class="operations-bg"></div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="ops.tag">OUR OPERATIONS</span>
+                <h2 class="section-title" data-i18n="ops.title">Modern equipment.<br>Efficient production.</h2>
+                <p class="section-desc" data-i18n="ops.desc">We use our own equipment and a modern fleet of loaders, excavators and conveyors to ensure high productivity and consistent quality.</p>
+            </div>
+            <div class="ops-features">
+                <div class="ops-feature" data-aos="fade-up">
+                    <div class="ops-icon"><i class="fas fa-cogs"></i></div>
+                    <h4 data-i18n="ops.f1_title">Own Equipment</h4>
+                    <p data-i18n="ops.f1_desc">Excavators, loaders, conveyors and more — all maintained in-house.</p>
+                </div>
+                <div class="ops-feature" data-aos="fade-up" data-aos-delay="100">
+                    <div class="ops-icon"><i class="fas fa-users-cog"></i></div>
+                    <h4 data-i18n="ops.f2_title">Experienced Team</h4>
+                    <p data-i18n="ops.f2_desc">Skilled operators and engineers with years of quarry experience.</p>
+                </div>
+                <div class="ops-feature" data-aos="fade-up" data-aos-delay="200">
+                    <div class="ops-icon"><i class="fas fa-sync-alt"></i></div>
+                    <h4 data-i18n="ops.f3_title">Consistent Supply</h4>
+                    <p data-i18n="ops.f3_desc">On-time and reliable production to meet any project deadline.</p>
+                </div>
+                <div class="ops-feature" data-aos="fade-up" data-aos-delay="300">
+                    <div class="ops-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h4 data-i18n="ops.f4_title">Quality Control</h4>
+                    <p data-i18n="ops.f4_desc">Every batch tested and verified to meet construction standards.</p>
+                </div>
+            </div>
+            <div class="ops-equipment-slider" id="equipmentSlider">
+                <div class="ops-slider-track">
+                    <div class="ops-slide">
+                        <div class="ops-slide-icon"><i class="fas fa-truck-loading"></i></div>
+                        <h4>Excavators</h4>
+                        <p data-i18n="ops.eq1">Heavy-duty excavators for efficient material extraction</p>
+                    </div>
+                    <div class="ops-slide">
+                        <div class="ops-slide-icon"><i class="fas fa-snowplow"></i></div>
+                        <h4 data-i18n="ops.eq2_title">Wheel Loaders</h4>
+                        <p data-i18n="ops.eq2">CAT & SDLG loaders for rapid material handling</p>
+                    </div>
+                    <div class="ops-slide">
+                        <div class="ops-slide-icon"><i class="fas fa-industry"></i></div>
+                        <h4 data-i18n="ops.eq3_title">Crushers</h4>
+                        <p data-i18n="ops.eq3">Stone crushing plants for producing various fractions</p>
+                    </div>
+                    <div class="ops-slide">
+                        <div class="ops-slide-icon"><i class="fas fa-filter"></i></div>
+                        <h4 data-i18n="ops.eq4_title">Screening Plants</h4>
+                        <p data-i18n="ops.eq4">Vibrating screens for precise material separation</p>
+                    </div>
+                    <div class="ops-slide">
+                        <div class="ops-slide-icon"><i class="fas fa-water"></i></div>
+                        <h4 data-i18n="ops.eq5_title">Sand Washers</h4>
+                        <p data-i18n="ops.eq5">Industrial sand washing equipment for clean product</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== DELIVERY ===================== -->
+    <section class="section delivery" id="delivery">
+        <div class="container">
+            <div class="delivery-grid">
+                <div class="delivery-left">
+                    <span class="section-tag" data-i18n="delivery.tag">DELIVERY & LOGISTICS</span>
+                    <h2 class="section-title" data-i18n="delivery.title">We deliver across<br>Uzbekistan</h2>
+                    <p class="section-desc" data-i18n="delivery.desc">We have our own fleet of HOWO trucks, SHACMAN, Chakman and other trucks. We deliver materials to all regions of Uzbekistan. If you have your own trucks, we can also supply the products directly to you at our quarry.</p>
+
+                    <div class="delivery-trucks">
+                        <div class="truck-card">
+                            <div class="truck-icon"><i class="fas fa-truck"></i></div>
+                            <div>
+                                <strong>HOWO</strong>
+                                <span>25-30 <span data-i18n="delivery.tons">tons</span></span>
+                            </div>
+                        </div>
+                        <div class="truck-card">
+                            <div class="truck-icon"><i class="fas fa-truck-moving"></i></div>
+                            <div>
+                                <strong>SHACMAN</strong>
+                                <span>25-35 <span data-i18n="delivery.tons">tons</span></span>
+                            </div>
+                        </div>
+                        <div class="truck-card">
+                            <div class="truck-icon"><i class="fas fa-truck-pickup"></i></div>
+                            <div>
+                                <strong>Chakman</strong>
+                                <span>20-25 <span data-i18n="delivery.tons">tons</span></span>
+                            </div>
+                        </div>
+                        <div class="truck-card">
+                            <div class="truck-icon"><i class="fas fa-trailer"></i></div>
+                            <div>
+                                <strong data-i18n="delivery.other_trucks">Other Trucks</strong>
+                                <span>15-40 <span data-i18n="delivery.tons">tons</span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#calculator" class="btn btn-primary" data-i18n="delivery.request">Request a Delivery <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="delivery-right">
+                    <div class="delivery-map-container">
+                        <div class="delivery-info-cards">
+                            <div class="delivery-info-card">
+                                <div class="info-icon"><i class="fas fa-map-marked-alt"></i></div>
+                                <div>
+                                    <strong data-i18n="delivery.all_regions">All regions of Uzbekistan</strong>
+                                    <span data-i18n="delivery.all_regions_desc">Tashkent, Samarkand, Bukhara, Fergana and more</span>
+                                </div>
+                            </div>
+                            <div class="delivery-info-card">
+                                <div class="info-icon"><i class="fas fa-truck-fast"></i></div>
+                                <div>
+                                    <strong data-i18n="delivery.own_fleet">Own fleet of trucks</strong>
+                                    <span data-i18n="delivery.own_fleet_desc">50+ vehicles available 24/7</span>
+                                </div>
+                            </div>
+                            <div class="delivery-info-card">
+                                <div class="info-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                                <div>
+                                    <strong data-i18n="delivery.flexible">Flexible delivery options</strong>
+                                    <span data-i18n="delivery.flexible_desc">Pickup available or we deliver to your site</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Uzbekistan SVG Map -->
+                        <div class="uz-map-wrapper">
+                            <svg viewBox="0 0 600 400" class="uz-map" id="uzMap">
+                                <!-- Simplified Uzbekistan outline -->
+                                <path class="uz-outline" d="M120,80 L180,60 L220,40 L280,35 L340,45 L380,55 L420,50 L460,65 L500,80 L520,100 L530,130 L520,160 L500,180 L480,200 L460,220 L440,240 L410,260 L380,270 L350,280 L320,285 L290,280 L260,270 L230,260 L200,250 L180,240 L160,220 L140,200 L120,180 L110,160 L105,140 L108,120 L112,100 Z" fill="rgba(200,163,95,0.05)" stroke="rgba(200,163,95,0.3)" stroke-width="1.5"/>
+                                <!-- Quarry location dot -->
+                                <circle cx="350" cy="150" r="8" fill="#C8A35F" class="quarry-dot">
+                                    <animate attributeName="r" values="6;12;6" dur="2s" repeatCount="indefinite"/>
+                                    <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+                                </circle>
+                                <circle cx="350" cy="150" r="4" fill="#fff"/>
+                                <text x="365" y="145" fill="#C8A35F" font-size="11" font-weight="600">Sirdarya</text>
+                                <text x="365" y="158" fill="rgba(255,255,255,0.6)" font-size="9">Quarry</text>
+
+                                <!-- City dots with labels -->
+                                <circle cx="280" cy="90" r="4" fill="rgba(200,163,95,0.6)" class="city-dot"/>
+                                <text x="290" y="95" fill="rgba(255,255,255,0.5)" font-size="9">Tashkent</text>
+
+                                <circle cx="250" cy="200" r="3" fill="rgba(200,163,95,0.4)" class="city-dot"/>
+                                <text x="260" y="205" fill="rgba(255,255,255,0.4)" font-size="8">Samarkand</text>
+
+                                <circle cx="180" cy="220" r="3" fill="rgba(200,163,95,0.4)" class="city-dot"/>
+                                <text x="190" y="225" fill="rgba(255,255,255,0.4)" font-size="8">Bukhara</text>
+
+                                <circle cx="430" cy="120" r="3" fill="rgba(200,163,95,0.4)" class="city-dot"/>
+                                <text x="440" y="125" fill="rgba(255,255,255,0.4)" font-size="8">Fergana</text>
+
+                                <circle cx="140" cy="190" r="3" fill="rgba(200,163,95,0.4)" class="city-dot"/>
+                                <text x="115" y="185" fill="rgba(255,255,255,0.4)" font-size="8">Navoi</text>
+
+                                <circle cx="320" cy="100" r="3" fill="rgba(200,163,95,0.4)" class="city-dot"/>
+                                <text x="325" y="105" fill="rgba(255,255,255,0.4)" font-size="8">Jizzakh</text>
+
+                                <!-- Delivery route lines -->
+                                <line x1="350" y1="150" x2="280" y2="90" stroke="rgba(200,163,95,0.2)" stroke-width="1" stroke-dasharray="4,4" class="route-line"/>
+                                <line x1="350" y1="150" x2="250" y2="200" stroke="rgba(200,163,95,0.2)" stroke-width="1" stroke-dasharray="4,4" class="route-line"/>
+                                <line x1="350" y1="150" x2="180" y2="220" stroke="rgba(200,163,95,0.2)" stroke-width="1" stroke-dasharray="4,4" class="route-line"/>
+                                <line x1="350" y1="150" x2="430" y2="120" stroke="rgba(200,163,95,0.2)" stroke-width="1" stroke-dasharray="4,4" class="route-line"/>
+                                <line x1="350" y1="150" x2="140" y2="190" stroke="rgba(200,163,95,0.2)" stroke-width="1" stroke-dasharray="4,4" class="route-line"/>
+                                <line x1="350" y1="150" x2="320" y2="100" stroke="rgba(200,163,95,0.2)" stroke-width="1" stroke-dasharray="4,4" class="route-line"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CALCULATOR ===================== -->
+    <section class="section calculator-section" id="calculator">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="calc.tag">PRICE CALCULATOR</span>
+                <h2 class="section-title" data-i18n="calc.title">Calculate your order</h2>
+                <p class="section-desc" data-i18n="calc.desc">Select material, quantity and delivery destination to get an instant price estimate. Final prices may vary — contact us for an exact quote.</p>
+            </div>
+            <div class="calculator-wrapper">
+                <div class="calc-form">
+                    <div class="calc-step active" id="calcStep1">
+                        <h3 data-i18n="calc.step1">1. Select Material</h3>
+                        <div class="calc-materials">
+                            <label class="calc-material-option">
+                                <input type="radio" name="material" value="sand" data-price="45000" checked>
+                                <div class="material-card">
+                                    <i class="fas fa-mountain"></i>
+                                    <span data-i18n="products.sand">Sand</span>
+                                    <small>45,000 UZS/<span data-i18n="products.per_ton_short">ton</span></small>
+                                </div>
+                            </label>
+                            <label class="calc-material-option">
+                                <input type="radio" name="material" value="gravel" data-price="55000">
+                                <div class="material-card">
+                                    <i class="fas fa-cubes"></i>
+                                    <span data-i18n="products.gravel">Gravel</span>
+                                    <small>55,000 UZS/<span data-i18n="products.per_ton_short">ton</span></small>
+                                </div>
+                            </label>
+                            <label class="calc-material-option">
+                                <input type="radio" name="material" value="crushed" data-price="65000">
+                                <div class="material-card">
+                                    <i class="fas fa-layer-group"></i>
+                                    <span data-i18n="products.crushed">Crushed Stone</span>
+                                    <small>65,000 UZS/<span data-i18n="products.per_ton_short">ton</span></small>
+                                </div>
+                            </label>
+                            <label class="calc-material-option">
+                                <input type="radio" name="material" value="rocks" data-price="40000">
+                                <div class="material-card">
+                                    <i class="fas fa-gem"></i>
+                                    <span data-i18n="products.rocks">Rocks & Stones</span>
+                                    <small>40,000 UZS/<span data-i18n="products.per_ton_short">ton</span></small>
+                                </div>
+                            </label>
+                            <label class="calc-material-option">
+                                <input type="radio" name="material" value="river_stone" data-price="50000">
+                                <div class="material-card">
+                                    <i class="fas fa-circle"></i>
+                                    <span data-i18n="products.river_stone">River Stone</span>
+                                    <small>50,000 UZS/<span data-i18n="products.per_ton_short">ton</span></small>
+                                </div>
+                            </label>
+                            <label class="calc-material-option">
+                                <input type="radio" name="material" value="pgs" data-price="48000">
+                                <div class="material-card">
+                                    <i class="fas fa-boxes-stacked"></i>
+                                    <span data-i18n="products.pgs">PGS Mix</span>
+                                    <small>48,000 UZS/<span data-i18n="products.per_ton_short">ton</span></small>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="calc-step active" id="calcStep2">
+                        <h3 data-i18n="calc.step2">2. Quantity & Delivery</h3>
+                        <div class="calc-inputs">
+                            <div class="calc-input-group">
+                                <label data-i18n="calc.quantity">Quantity (tons)</label>
+                                <div class="calc-qty-control">
+                                    <button class="qty-btn" id="qtyMinus"><i class="fas fa-minus"></i></button>
+                                    <input type="number" id="calcQty" value="25" min="1" max="10000" step="1">
+                                    <button class="qty-btn" id="qtyPlus"><i class="fas fa-plus"></i></button>
+                                </div>
+                                <div class="qty-presets">
+                                    <button class="qty-preset" data-qty="10">10t</button>
+                                    <button class="qty-preset active" data-qty="25">25t</button>
+                                    <button class="qty-preset" data-qty="50">50t</button>
+                                    <button class="qty-preset" data-qty="100">100t</button>
+                                    <button class="qty-preset" data-qty="500">500t</button>
+                                    <button class="qty-preset" data-qty="1000">1000t</button>
+                                </div>
+                            </div>
+                            <div class="calc-input-group">
+                                <label data-i18n="calc.delivery_type">Delivery Type</label>
+                                <div class="calc-delivery-options">
+                                    <label class="delivery-option">
+                                        <input type="radio" name="delivery" value="pickup" checked>
+                                        <div class="delivery-card">
+                                            <i class="fas fa-warehouse"></i>
+                                            <span data-i18n="calc.pickup">Self Pickup</span>
+                                            <small data-i18n="calc.pickup_desc">Come to our quarry</small>
+                                        </div>
+                                    </label>
+                                    <label class="delivery-option">
+                                        <input type="radio" name="delivery" value="delivery">
+                                        <div class="delivery-card">
+                                            <i class="fas fa-truck"></i>
+                                            <span data-i18n="calc.delivery_opt">Our Delivery</span>
+                                            <small data-i18n="calc.delivery_opt_desc">We bring to your site</small>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="calc-input-group delivery-dest-group" id="deliveryDest" style="display:none;">
+                                <label data-i18n="calc.destination">Delivery Destination</label>
+                                <select id="calcDest" class="calc-select">
+                                    <option value="0" data-i18n="calc.select_region">Select region</option>
+                                    <option value="150">Tashkent (150 km)</option>
+                                    <option value="50">Sirdarya (50 km)</option>
+                                    <option value="100">Jizzakh (100 km)</option>
+                                    <option value="300">Samarkand (300 km)</option>
+                                    <option value="200">Namangan (200 km)</option>
+                                    <option value="250">Fergana (250 km)</option>
+                                    <option value="280">Andijan (280 km)</option>
+                                    <option value="500">Bukhara (500 km)</option>
+                                    <option value="600">Navoi (600 km)</option>
+                                    <option value="700">Kashkadarya (700 km)</option>
+                                    <option value="800">Surkhandarya (800 km)</option>
+                                    <option value="750">Khorezm (750 km)</option>
+                                    <option value="900">Karakalpakstan (900 km)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calc-result" id="calcResult">
+                    <div class="calc-result-header">
+                        <h3 data-i18n="calc.estimate">Price Estimate</h3>
+                        <span class="calc-badge" data-i18n="calc.instant">Instant</span>
+                    </div>
+                    <div class="calc-result-body">
+                        <div class="result-line">
+                            <span data-i18n="calc.material_label">Material</span>
+                            <span id="resultMaterial">Sand</span>
+                        </div>
+                        <div class="result-line">
+                            <span data-i18n="calc.qty_label">Quantity</span>
+                            <span id="resultQty">25 tons</span>
+                        </div>
+                        <div class="result-line">
+                            <span data-i18n="calc.material_cost">Material Cost</span>
+                            <span id="resultMaterialCost">1,125,000 UZS</span>
+                        </div>
+                        <div class="result-line" id="resultDeliveryLine" style="display:none;">
+                            <span data-i18n="calc.delivery_cost">Delivery Cost</span>
+                            <span id="resultDeliveryCost">0 UZS</span>
+                        </div>
+                        <div class="result-line" id="resultTrucksLine" style="display:none;">
+                            <span data-i18n="calc.trucks_needed">Trucks Needed</span>
+                            <span id="resultTrucks">1</span>
+                        </div>
+                        <div class="result-divider"></div>
+                        <div class="result-total">
+                            <span data-i18n="calc.total">Total Estimate</span>
+                            <span id="resultTotal">1,125,000 UZS</span>
+                        </div>
+                        <div class="result-usd">
+                            <span>≈</span>
+                            <span id="resultUSD">~$88</span>
+                        </div>
+                    </div>
+                    <div class="calc-result-footer">
+                        <p data-i18n="calc.note">* Prices are approximate. Contact us for an exact quote.</p>
+                        <a href="#contact" class="btn btn-primary btn-block" data-i18n="calc.order">Order Now <i class="fas fa-arrow-right"></i></a>
+                        <a href="tel:+998901234567" class="btn btn-outline btn-block"><i class="fas fa-phone"></i> +998 90 123 45 67</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-left">
+                    <span class="section-tag" data-i18n="about.tag">ABOUT US</span>
+                    <h2 class="section-title" data-i18n="about.title">Gold Sand and Gravy</h2>
+                    <p class="about-text" data-i18n="about.text1">We are a trusted partner in the construction industry, supplying natural materials from the Sirdarya River with a focus on quality, reliability and long-term cooperation.</p>
+                    <p class="about-text" data-i18n="about.text2">Our quarry operates year-round, with modern equipment and experienced staff ensuring consistent supply of premium construction materials to all regions of Uzbekistan.</p>
+
+                    <div class="about-values">
+                        <div class="about-value">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="about.v1">Licensed and certified operations</span>
+                        </div>
+                        <div class="about-value">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="about.v2">Environmentally responsible extraction</span>
+                        </div>
+                        <div class="about-value">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="about.v3">Competitive pricing with volume discounts</span>
+                        </div>
+                        <div class="about-value">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="about.v4">Long-term contracts available</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary" data-i18n="about.learn">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="about-right">
+                    <div class="about-stats">
+                        <div class="about-stat" data-aos="fade-left">
+                            <div class="about-stat-number"><span data-count="1" class="stat-num">0</span>M+</div>
+                            <div class="about-stat-label" data-i18n="about.s1">Tons of materials<br>per year</div>
+                        </div>
+                        <div class="about-stat" data-aos="fade-left" data-aos-delay="100">
+                            <div class="about-stat-number"><span data-count="100" class="stat-num">0</span>%</div>
+                            <div class="about-stat-label" data-i18n="about.s2">Quality control<br>on all products</div>
+                        </div>
+                        <div class="about-stat" data-aos="fade-left" data-aos-delay="200">
+                            <div class="about-stat-number">24/7</div>
+                            <div class="about-stat-label" data-i18n="about.s3">Support &<br>delivery</div>
+                        </div>
+                        <div class="about-stat" data-aos="fade-left" data-aos-delay="300">
+                            <div class="about-stat-number"><span data-count="500" class="stat-num">0</span>+</div>
+                            <div class="about-stat-label" data-i18n="about.s4">Satisfied<br>clients</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS ===================== -->
+    <section class="section testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="test.tag">TESTIMONIALS</span>
+                <h2 class="section-title" data-i18n="test.title">What our clients say</h2>
+            </div>
+            <div class="testimonials-slider" id="testimonialsSlider">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p data-i18n="test.t1">"We've been working with Gold Sand and Gravy for over 2 years. Their sand quality is exceptional and deliveries are always on time. Highly recommend for any construction project."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AK</div>
+                        <div>
+                            <strong>Aziz Karimov</strong>
+                            <span data-i18n="test.t1_role">Construction Manager, Tashkent</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p data-i18n="test.t2">"Best quarry in the Sirdarya region. Fair prices, consistent quality, and their HOWO trucks deliver right to our site. We order crushed stone and gravel regularly."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RN</div>
+                        <div>
+                            <strong>Rustam Nazarov</strong>
+                            <span data-i18n="test.t2_role">Road Construction Foreman</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p data-i18n="test.t3">"Excellent service! We use self-pickup with our own trucks and they always load us quickly. The price calculator on the website is very convenient."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MJ</div>
+                        <div>
+                            <strong>Mirzo Jurayev</strong>
+                            <span data-i18n="test.t3_role">Private Developer, Jizzakh</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-left">
+                    <span class="section-tag" data-i18n="contact.tag">GET IN TOUCH</span>
+                    <h2 class="section-title" data-i18n="contact.title">Contact us</h2>
+                    <p class="section-desc" data-i18n="contact.desc">Ready to order? Have questions? Get in touch and we'll respond within 30 minutes during business hours.</p>
+
+                    <div class="contact-info-list">
+                        <a href="tel:+998901234567" class="contact-info-item">
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <strong data-i18n="contact.phone">Phone (Main)</strong>
+                                <span>+998 90 123 45 67</span>
+                            </div>
+                        </a>
+                        <a href="tel:+998901234568" class="contact-info-item">
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <strong data-i18n="contact.phone2">Phone (Sales)</strong>
+                                <span>+998 90 123 45 68</span>
+                            </div>
+                        </a>
+                        <a href="tel:+998901234569" class="contact-info-item">
+                            <div class="contact-icon"><i class="fas fa-truck"></i></div>
+                            <div>
+                                <strong data-i18n="contact.phone3">Delivery Dispatch</strong>
+                                <span>+998 90 123 45 69</span>
+                            </div>
+                        </a>
+                        <a href="https://t.me/goldsandgravy" target="_blank" class="contact-info-item">
+                            <div class="contact-icon"><i class="fab fa-telegram"></i></div>
+                            <div>
+                                <strong>Telegram</strong>
+                                <span>@goldsandgravy</span>
+                            </div>
+                        </a>
+                        <a href="mailto:info@goldsand.uz" class="contact-info-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <strong>Email</strong>
+                                <span>info@goldsand.uz</span>
+                            </div>
+                        </a>
+                        <a href="https://maps.app.goo.gl/iEEmPR3RcGJawMTAA" target="_blank" class="contact-info-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <strong data-i18n="contact.address">Address</strong>
+                                <span data-i18n="contact.address_val">Sirdarya River, Uzbekistan</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="contact-hours">
+                        <h4 data-i18n="contact.hours_title"><i class="fas fa-clock"></i> Working Hours</h4>
+                        <div class="hours-grid">
+                            <span data-i18n="contact.weekdays">Monday — Saturday</span>
+                            <strong>07:00 — 19:00</strong>
+                            <span data-i18n="contact.sunday">Sunday</span>
+                            <strong data-i18n="contact.by_appt">By appointment</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form class="contact-form" id="contactForm">
+                        <h3 data-i18n="contact.form_title">Send us a message</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label data-i18n="contact.name">Your Name</label>
+                                <input type="text" id="formName" required placeholder="Abdulaziz">
+                            </div>
+                            <div class="form-group">
+                                <label data-i18n="contact.phone_label">Phone Number</label>
+                                <input type="tel" id="formPhone" required placeholder="+998 90 123 45 67">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label data-i18n="contact.subject">Subject</label>
+                            <select id="formSubject">
+                                <option value="order" data-i18n="contact.sub_order">New Order</option>
+                                <option value="quote" data-i18n="contact.sub_quote">Price Quote</option>
+                                <option value="delivery" data-i18n="contact.sub_delivery">Delivery Inquiry</option>
+                                <option value="partnership" data-i18n="contact.sub_partner">Partnership</option>
+                                <option value="other" data-i18n="contact.sub_other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label data-i18n="contact.message">Message</label>
+                            <textarea id="formMessage" rows="4" placeholder="Tell us about your project needs..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block" data-i18n="contact.send">Send Message <i class="fas fa-paper-plane"></i></button>
+                        <p class="form-note" data-i18n="contact.response_note">We'll respond within 30 minutes during working hours</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== MAP ===================== -->
+    <section class="map-section">
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25000!2d68.65!3d40.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDMwJzAwLjAiTiA2OMKwMzknMDAuMCJF!5e0!3m2!1sen!2s!4v1"
+                width="100%" height="400" style="border:0; filter: invert(90%) hue-rotate(180deg) brightness(0.8) contrast(1.2);" allowfullscreen="" loading="lazy">
+            </iframe>
+            <div class="map-overlay-card">
+                <h4 data-i18n="map.title">Visit Our Quarry</h4>
+                <p data-i18n="map.desc">Sirdarya River, Uzbekistan</p>
+                <a href="https://maps.app.goo.gl/iEEmPR3RcGJawMTAA" target="_blank" class="btn btn-primary btn-sm" data-i18n="map.directions">Get Directions <i class="fas fa-directions"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#hero" class="nav-logo">
+                        <svg viewBox="0 0 50 40" fill="none" class="logo-icon">
+                            <path d="M3 37 L25 3 L47 37 Z" stroke="#C8A35F" stroke-width="2" fill="none"/>
+                            <path d="M13 37 L25 14 L37 37 Z" fill="#C8A35F" opacity="0.4"/>
+                            <line x1="7" y1="30" x2="43" y2="30" stroke="#C8A35F" stroke-width="1.5"/>
+                        </svg>
+                        <div class="logo-text">
+                            <span class="logo-main">GOLD SAND</span>
+                            <span class="logo-sub">AND GRAVY</span>
+                        </div>
+                    </a>
+                    <p data-i18n="footer.brand_desc">Quality materials. Reliable supply. Your trusted partner for construction materials from the Sirdarya River.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer.contacts">Contact us</h4>
+                    <ul>
+                        <li><a href="tel:+998901234567"><i class="fas fa-phone"></i> +998 90 123 45 67</a></li>
+                        <li><a href="tel:+998901234568"><i class="fas fa-phone"></i> +998 90 123 45 68</a></li>
+                        <li><a href="mailto:info@goldsand.uz"><i class="fas fa-envelope"></i> info@goldsand.uz</a></li>
+                        <li><a href="https://maps.app.goo.gl/iEEmPR3RcGJawMTAA" target="_blank"><i class="fas fa-map-marker-alt"></i> <span data-i18n="contact.address_val">Sirdarya River, Uzbekistan</span></a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer.links">Quick Links</h4>
+                    <ul>
+                        <li><a href="#products" data-i18n="nav.products">Products</a></li>
+                        <li><a href="#operations" data-i18n="nav.operations">Our Operations</a></li>
+                        <li><a href="#delivery" data-i18n="nav.delivery">Delivery</a></li>
+                        <li><a href="#calculator" data-i18n="nav.calculator">Calculator</a></li>
+                        <li><a href="#about" data-i18n="nav.about">About</a></li>
+                        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-cta-col">
+                    <a href="#contact" class="btn btn-primary" data-i18n="nav.quote">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                    <div class="footer-social">
+                        <a href="https://t.me/goldsandgravy" target="_blank" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="https://instagram.com/goldsandgravy" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com/goldsandgravy" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://youtube.com/@goldsandgravy" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2025 Gold Sand and Gravy. <span data-i18n="footer.rights">All rights reserved.</span></span>
+                <div class="footer-tags">
+                    <span>Sand</span> / <span>Gravel</span> / <span>Rocks</span> / <span>Crushed Stone</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===================== FLOATING CTA ===================== -->
+    <div class="floating-cta" id="floatingCta">
+        <a href="tel:+998901234567" class="float-btn float-phone" aria-label="Call us">
+            <i class="fas fa-phone"></i>
+        </a>
+        <a href="https://t.me/goldsandgravy" target="_blank" class="float-btn float-telegram" aria-label="Telegram">
+            <i class="fab fa-telegram"></i>
+        </a>
+        <button class="float-btn float-top" id="scrollTop" aria-label="Scroll to top">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
