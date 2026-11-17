@@ -11,15 +11,13 @@ window.SITE = {
 
   /* ---------- Contacts ---------- */
   phones: {
-    sales:    { display: '+998 90 123 45 67', tel: '+998901234567' },   // TODO real number
-    dispatch: { display: '+998 91 765 43 21', tel: '+998917654321' }    // TODO real number
+    sales:    { display: '+998 93 817 98 98', tel: '+998938179898' },
+    dispatch: { display: '+998 94 323 10 11', tel: '+998943231011' }
   },
-  telegram:  { user: 'goldsandgravy', url: 'https://t.me/goldsandgravy' },   // TODO
-  whatsapp:  '998901234567',                                               // TODO digits only
-  instagram: 'https://instagram.com/goldsandgravy',                        // TODO
-  youtube:   'https://youtube.com/@goldsandgravy',                         // TODO
-  email:     'info@goldsandgravy.uz',                                      // TODO
-  hours:     { open: '07:00', close: '20:00' },
+  telegram:  'https://t.me/+998938179898',   // opens a Telegram chat with the sales number
+  whatsapp:  '998938179898',                  // digits only
+  email:     'info@goldsand.uz',
+  hours:     { open: '00:00', close: '24:00' }, // 24/7
 
   /* ---------- Quarry location (from your Google Maps link) ---------- */
   quarry: {

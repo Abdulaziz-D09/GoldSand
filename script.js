@@ -96,14 +96,12 @@
   function bindContacts() {
     $$('[data-tel]').forEach((a) => { const p = S.phones[a.dataset.tel]; if (p) a.href = `tel:${p.tel}`; });
     $$('[data-tel-text]').forEach((el) => { const p = S.phones[el.dataset.telText]; if (p) el.textContent = p.display; });
-    $$('[data-tg]').forEach((a) => { a.href = S.telegram.url; });
-    $$('[data-tg-text]').forEach((el) => { el.textContent = '@' + S.telegram.user; });
+    $$('[data-tg]').forEach((a) => { a.href = S.telegram; });
+    $$('[data-tg-text]').forEach((el) => { el.textContent = S.phones.sales.display; });
     $$('[data-wa]').forEach((a) => { a.href = `https://wa.me/${S.whatsapp}`; });
     $$('[data-wa-text]').forEach((el) => { el.textContent = S.phones.sales.display; });
     $$('[data-mail]').forEach((a) => { a.href = `mailto:${S.email}`; });
     $$('[data-mail-text]').forEach((el) => { el.textContent = S.email; });
-    $$('[data-insta]').forEach((a) => { a.href = S.instagram; });
-    $$('[data-yt]').forEach((a) => { a.href = S.youtube; });
     const g = $('#dirGoogle'); if (g) g.href = S.quarry.googleMaps;
     const y = $('#dirYandex'); if (y) y.href = `https://yandex.uz/maps/?rtext=~${S.quarry.lat},${S.quarry.lng}&rtt=auto`;
   }
@@ -684,7 +682,7 @@
     $('#sendTg').addEventListener('click', () => {
       const msg = orderMessage();
       copy(msg);
-      window.open(S.telegram.url, '_blank', 'noopener');
+      window.open(S.telegram, '_blank', 'noopener');
       toast(t('toast.copied'));
     });
     $('#copyEst').addEventListener('click', () => { copy(orderMessage()); toast(t('toast.copiedPlain')); });

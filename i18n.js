@@ -88,7 +88,7 @@ window.I18N = {
     'calc.step3': 'Delivery', 'calc.delivery': 'Delivery', 'calc.pickup': 'Self-pickup',
     'calc.dest': 'Destination', 'calc.custom': 'Other — enter distance', 'calc.km': 'Distance, km',
     'calc.truck': 'Truck type', 'calc.auto': 'Best option',
-    'calc.pickupNote': 'Pick up at the quarry in Gulistan district, Sirdaryo region. Loading by our loaders is free. Open daily 07:00–20:00.',
+    'calc.pickupNote': 'Pick up at the quarry in Gulistan district, Sirdaryo region. Loading by our loaders is free. Open 24/7.',
     'calc.recommended': 'Recommended',
 
     'sum.title': 'Your estimate', 'sum.material': 'Material', 'sum.volume': 'Volume', 'sum.weight': 'Weight', 'sum.trucks': 'Trips',
@@ -121,12 +121,12 @@ window.I18N = {
     'faq.q3': 'How fast is delivery?', 'faq.a3': 'Within Sirdaryo and Tashkent regions — usually the same day. To other regions — 1–3 days depending on the distance.',
     'faq.q4': 'How is the volume measured?', 'faq.a4': 'By truck body volume (m³) or by weight (tons). Every load is checked before it leaves the quarry.',
     'faq.q5': 'How can I pay?', 'faq.a5': 'In cash, by bank card or by bank transfer. We work with companies under contract with full documentation.',
-    'faq.q6': 'Do you work on weekends?', 'faq.a6': 'Yes, we work 7 days a week from 07:00 to 20:00, and our dispatcher is available 24/7.',
+    'faq.q6': 'Do you work on weekends?', 'faq.a6': 'Yes, we work 24/7 — weekends and holidays included.',
 
     'contact.tag': 'Contact', 'contact.title': 'Let’s discuss your project',
     'contact.desc': 'Call, message us on Telegram or leave a request — during working hours we call back within 15 minutes.',
     'contact.sales': 'Sales department', 'contact.dispatch': 'Delivery dispatcher', 'contact.tg': 'Telegram', 'contact.wa': 'WhatsApp',
-    'contact.email': 'Email', 'contact.hours': 'Working hours', 'contact.hoursVal': 'Every day, 07:00 – 20:00',
+    'contact.email': 'Email', 'contact.hours': 'Working hours', 'contact.hoursVal': '24/7, every day',
     'contact.address': 'Quarry address', 'contact.addressVal': 'Gulistan district, Sirdaryo region, Uzbekistan (Sirdarya River)',
     'contact.directions': 'Get directions', 'contact.copy': 'Copy coordinates', 'contact.open': 'Open now', 'contact.closed': 'Closed now',
 
@@ -239,7 +239,7 @@ window.I18N = {
     'calc.step3': 'Доставка', 'calc.delivery': 'Доставка', 'calc.pickup': 'Самовывоз',
     'calc.dest': 'Куда доставить', 'calc.custom': 'Другое — указать расстояние', 'calc.km': 'Расстояние, км',
     'calc.truck': 'Тип машины', 'calc.auto': 'Оптимально',
-    'calc.pickupNote': 'Самовывоз с карьера: Сырдарьинская обл., Гулистанский р-н. Погрузка нашими погрузчиками — бесплатно. Ежедневно 07:00–20:00.',
+    'calc.pickupNote': 'Самовывоз с карьера: Сырдарьинская обл., Гулистанский р-н. Погрузка нашими погрузчиками — бесплатно. Работаем круглосуточно.',
     'calc.recommended': 'Рекомендуем',
 
     'sum.title': 'Ваш расчёт', 'sum.material': 'Материал', 'sum.volume': 'Объём', 'sum.weight': 'Вес', 'sum.trucks': 'Рейсы',
@@ -272,12 +272,12 @@ window.I18N = {
     'faq.q3': 'Как быстро вы доставляете?', 'faq.a3': 'По Сырдарьинской и Ташкентской областям — обычно в тот же день. В другие регионы — 1–3 дня в зависимости от расстояния.',
     'faq.q4': 'Как измеряется объём?', 'faq.a4': 'По объёму кузова (м³) или по весу (тонны). Каждая машина проверяется перед выездом с карьера.',
     'faq.q5': 'Как можно оплатить?', 'faq.a5': 'Наличными, банковской картой или перечислением. С юридическими лицами работаем по договору со всеми документами.',
-    'faq.q6': 'Вы работаете в выходные?', 'faq.a6': 'Да, мы работаем 7 дней в неделю с 07:00 до 20:00, а диспетчер на связи 24/7.',
+    'faq.q6': 'Вы работаете в выходные?', 'faq.a6': 'Да, мы работаем круглосуточно, без выходных и праздников.',
 
     'contact.tag': 'Контакты', 'contact.title': 'Обсудим ваш проект',
     'contact.desc': 'Позвоните, напишите в Telegram или оставьте заявку — в рабочее время перезвоним в течение 15 минут.',
     'contact.sales': 'Отдел продаж', 'contact.dispatch': 'Диспетчер доставки', 'contact.tg': 'Telegram', 'contact.wa': 'WhatsApp',
-    'contact.email': 'Email', 'contact.hours': 'Режим работы', 'contact.hoursVal': 'Ежедневно, 07:00 – 20:00',
+    'contact.email': 'Email', 'contact.hours': 'Режим работы', 'contact.hoursVal': 'Круглосуточно, без выходных',
     'contact.address': 'Адрес карьера', 'contact.addressVal': 'Узбекистан, Сырдарьинская обл., Гулистанский р-н (река Сырдарья)',
     'contact.directions': 'Проложить маршрут', 'contact.copy': 'Копировать координаты', 'contact.open': 'Сейчас открыто', 'contact.closed': 'Сейчас закрыто',
 
@@ -390,7 +390,7 @@ window.I18N = {
     'calc.step3': 'Yetkazib berish', 'calc.delivery': 'Yetkazib berish', 'calc.pickup': 'Oʻzi olib ketish',
     'calc.dest': 'Manzil', 'calc.custom': 'Boshqa — masofani kiriting', 'calc.km': 'Masofa, km',
     'calc.truck': 'Mashina turi', 'calc.auto': 'Eng maqbul',
-    'calc.pickupNote': 'Karyerdan olib ketish: Sirdaryo viloyati, Guliston tumani. Yuklagichlarimiz bilan yuklash bepul. Har kuni 07:00–20:00.',
+    'calc.pickupNote': 'Karyerdan olib ketish: Sirdaryo viloyati, Guliston tumani. Yuklagichlarimiz bilan yuklash bepul. 24/7 ishlaymiz.',
     'calc.recommended': 'Tavsiya etiladi',
 
     'sum.title': 'Taxminiy hisob', 'sum.material': 'Material', 'sum.volume': 'Hajm', 'sum.weight': 'Ogʻirlik', 'sum.trucks': 'Reyslar',
@@ -423,12 +423,12 @@ window.I18N = {
     'faq.q3': 'Yetkazib berish qancha vaqt oladi?', 'faq.a3': 'Sirdaryo va Toshkent viloyatlari boʻylab — odatda shu kunning oʻzida. Boshqa hududlarga — masofaga qarab 1–3 kun.',
     'faq.q4': 'Hajm qanday oʻlchanadi?', 'faq.a4': 'Kuzov hajmi (m³) yoki ogʻirlik (tonna) boʻyicha. Har bir yuk karyerdan chiqishdan oldin tekshiriladi.',
     'faq.q5': 'Qanday toʻlash mumkin?', 'faq.a5': 'Naqd pul, bank kartasi yoki bank oʻtkazmasi orqali. Yuridik shaxslar bilan barcha hujjatlar asosida shartnoma boʻyicha ishlaymiz.',
-    'faq.q6': 'Dam olish kunlari ishlaysizlarmi?', 'faq.a6': 'Ha, haftada 7 kun 07:00 dan 20:00 gacha ishlaymiz, dispetcherimiz esa 24/7 aloqada.',
+    'faq.q6': 'Dam olish kunlari ishlaysizlarmi?', 'faq.a6': 'Ha, biz 24/7 ishlaymiz — dam olish va bayram kunlari ham.',
 
     'contact.tag': 'Aloqa', 'contact.title': 'Loyihangizni muhokama qilaylik',
     'contact.desc': 'Qoʻngʻiroq qiling, Telegramga yozing yoki ariza qoldiring — ish vaqtida 15 daqiqa ichida qayta qoʻngʻiroq qilamiz.',
     'contact.sales': 'Sotuv boʻlimi', 'contact.dispatch': 'Yetkazish dispetcheri', 'contact.tg': 'Telegram', 'contact.wa': 'WhatsApp',
-    'contact.email': 'Email', 'contact.hours': 'Ish vaqti', 'contact.hoursVal': 'Har kuni, 07:00 – 20:00',
+    'contact.email': 'Email', 'contact.hours': 'Ish vaqti', 'contact.hoursVal': 'Har kuni, 24/7',
     'contact.address': 'Karyer manzili', 'contact.addressVal': 'Oʻzbekiston, Sirdaryo viloyati, Guliston tumani (Sirdaryo daryosi)',
     'contact.directions': 'Yoʻnalish olish', 'contact.copy': 'Koordinatalarni nusxalash', 'contact.open': 'Hozir ochiq', 'contact.closed': 'Hozir yopiq',
 
